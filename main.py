@@ -8,3 +8,4 @@ You are a helpful assistant that helps people find information.
 here are some relevant data: {data}
 Please answer the following question: {question}
 If you don't know the answer, just say that you don't know, don't try to make up an answer."""
+prompt = ChatPromptTemplate.from_template(template)
