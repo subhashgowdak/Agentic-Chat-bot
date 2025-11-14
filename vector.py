@@ -8,3 +8,16 @@ df = pd.read_csv("people-100.csv")
 embeddings = OllamaEmbeddings(model="mxbai-embed-large")
 
 db_location = "./chroma_langchain_db"
+add_documents = not os.path.exists(db_location)
+
+if add_documents:
+    documents = []
+    ids = []
+    for i, row in df.iterrows():
+        document = Document(
+            page_content= row["First Name"] + row["Sex"] + row["Email"] + row["Phone"] + row["Job Title"],
+            metadata= {"id": row["User Id"], "dob": row["Date of birth"]},
+            id=str(i)
+        )
+        ids.append(str(i))
+        documents.append(document)
