@@ -30,3 +30,7 @@ vectorstore = Chroma(
 
 if add_documents:
     vectorstore.add_documents(documents, ids=ids)
+    
+retreiver = vectorstore.as_retriever(
+    search_kwargs={"k": 5}
+)
