@@ -27,3 +27,6 @@ vectorstore = Chroma(
     persist_directory=db_location,
     embedding_function=embeddings
 )
+
+if add_documents:
+    vectorstore.add_documents(documents, ids=ids)
