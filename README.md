@@ -24,4 +24,18 @@ Agentic-Chat-bot/
 └── README.md
 ```
 
-## 🙌 Author
+## ⚙️ How It Works
+
+### 1. **Vector Store Creation** (`vector.py`)
+
+* Loads `people-100.csv`
+* Converts each row into a text document
+* Embeds documents using **OllamaEmbeddings**
+* Saves them in a local **Chroma** database
+
+### 2. **Chatbot Flow** (`main.py`)
+
+* Takes user question from terminal
+* Retrieves the most relevant entries from vector DB
+* Feeds both question + context to an Ollama LLM (example: `llama3.2`)
+* Returns the generated answer
