@@ -1,5 +1,6 @@
 from langchain_ollama.llms import OllamaLLM
 from langchain_core.prompts import PromptTemplate
+from vector import retreiver
 
 model=OllamaLLM(model="llama3.2")
 
@@ -17,6 +18,7 @@ while True:
     print("\n\n")
     if question == "q":
         break
-
+    
+    data = retreiver.invoke(question)
     response=chain.invoke({"data":data,"question":question})
     print(response)
