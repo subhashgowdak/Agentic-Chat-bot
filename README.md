@@ -98,3 +98,7 @@ Enter your question: Who is John?
 Retrieved context added...
 Bot: "John is ..." (based on CSV data)
 ```
+
+## 📜 License
+
+This project is licensed under the **Apache 2.0 License**.
