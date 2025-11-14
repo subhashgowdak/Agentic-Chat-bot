@@ -21,3 +21,9 @@ if add_documents:
         )
         ids.append(str(i))
         documents.append(document)
+
+vectorstore = Chroma(
+    collection_name="people",
+    persist_directory=db_location,
+    embedding_function=embeddings
+)
