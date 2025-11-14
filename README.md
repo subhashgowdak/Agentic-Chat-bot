@@ -39,3 +39,45 @@ Agentic-Chat-bot/
 * Retrieves the most relevant entries from vector DB
 * Feeds both question + context to an Ollama LLM (example: `llama3.2`)
 * Returns the generated answer
+
+## 🚀 Getting Started
+
+### **1. Clone the repo**
+
+```bash
+git clone https://github.com/subhashgowdak/Agentic-Chat-bot.git
+cd Agentic-Chat-bot
+```
+
+### **2. Create a virtual environment**
+
+```bash
+python -m venv .venv
+source .venv/bin/activate        # Mac/Linux
+.\\.venv\\Scripts\\activate       # Windows
+```
+
+### **3. Install dependencies**
+
+```bash
+pip install -r Requirements.txt
+```
+
+### **4. Make sure Ollama is running**
+
+Install Ollama from [https://ollama.com](https://ollama.com)
+
+Download models used in code (or change names):
+
+```bash
+ollama pull llama3.2
+ollama pull mxbai-embed-large
+```
+
+### **5. Run the chatbot**
+
+```bash
+python main.py
+```
+
+Type your questions, type `q` to exit.
