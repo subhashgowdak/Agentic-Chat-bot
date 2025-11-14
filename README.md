@@ -102,3 +102,8 @@ Bot: "John is ..." (based on CSV data)
 ## 📜 License
 
 This project is licensed under the **Apache 2.0 License**.
+
+## 🙌 Author
+
+**Subhash Gowda K** 
+A simple prototype demonstrating embedding-based retrieval and LLM-powered chat using Python + Ollama.
