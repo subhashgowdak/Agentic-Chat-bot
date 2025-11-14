@@ -89,3 +89,12 @@ The repository includes a small file: **people-100.csv**
 * Rows are converted into text documents
 * Stored inside Chroma
 * Retrieved based on similarity to your question
+
+## 📝 Example Interaction
+
+```
+Enter your question: Who is John?
+
+Retrieved context added...
+Bot: "John is ..." (based on CSV data)
+```
