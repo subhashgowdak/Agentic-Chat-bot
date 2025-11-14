@@ -81,3 +81,11 @@ python main.py
 ```
 
 Type your questions, type `q` to exit.
+
+## 📦 Dataset
+
+The repository includes a small file: **people-100.csv**
+
+* Rows are converted into text documents
+* Stored inside Chroma
+* Retrieved based on similarity to your question
