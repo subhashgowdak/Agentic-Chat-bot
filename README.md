@@ -10,3 +10,18 @@ This repository demonstrates how to:
 * Generate responses using an LLM from the Ollama ecosystem
 
 This is a lightweight prototype suitable for learning, experimentation, and extending into your own agentic systems.
+
+## 📁 Project Structure
+
+```
+Agentic-Chat-bot/
+│
+├── main.py              # Chat loop + LLM pipeline
+├── vector.py            # Embeddings + Chroma vector store builder
+├── people-100.csv       # Sample dataset used for retrieval
+├── Requirements.txt     # Required dependencies
+├── LICENSE
+└── README.md
+```
+
+## 🙌 Author
