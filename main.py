@@ -10,3 +10,13 @@ Please answer the following question: {question}
 If you don't know the answer, just say that you don't know, don't try to make up an answer."""
 prompt = ChatPromptTemplate.from_template(template)
 chain=prompt | model
+
+while True:
+    print("\n\n--------------------------------------------------")
+    question = input("Enter your question (or q to quit): ")
+    print("\n\n")
+    if question == "q":
+        break
+
+    response=chain.invoke({"data":data,"question":question})
+    print(response)
